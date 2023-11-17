@@ -1,0 +1,276 @@
+way:0,  tag:None
+way:1,  tag:None
+way:2,  tag:None
+way:3,  tag:None
+way:4,  tag:None
+way:5,  tag:None
+way:6,  tag:None
+way:7,  tag:None
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 1
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:None
+way:3,  tag:None
+way:4,  tag:None
+way:5,  tag:None
+way:6,  tag:None
+way:7,  tag:None
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 2
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:None
+way:4,  tag:None
+way:5,  tag:None
+way:6,  tag:None
+way:7,  tag:None
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 3
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:128
+way:4,  tag:None
+way:5,  tag:None
+way:6,  tag:None
+way:7,  tag:None
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 4
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:128
+way:4,  tag:192
+way:5,  tag:None
+way:6,  tag:None
+way:7,  tag:None
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 5
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:128
+way:4,  tag:192
+way:5,  tag:256
+way:6,  tag:None
+way:7,  tag:None
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 6
+way:0,  tag:None
+way:1,  tag:None
+way:2,  tag:None
+way:3,  tag:None
+way:4,  tag:None
+way:5,  tag:None
+way:6,  tag:None
+way:7,  tag:None
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 3 way to replace: 1
+way:0,  tag:None
+way:1,  tag:None
+way:2,  tag:None
+way:3,  tag:None
+way:4,  tag:None
+way:5,  tag:None
+way:6,  tag:None
+way:7,  tag:None
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 1 way to replace: 1
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:128
+way:4,  tag:192
+way:5,  tag:256
+way:6,  tag:320
+way:7,  tag:None
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 7
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:128
+way:4,  tag:192
+way:5,  tag:256
+way:6,  tag:320
+way:7,  tag:384
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 8
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:128
+after tag_hit =1
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+after tag_hit =1
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:128
+way:4,  tag:192
+way:5,  tag:256
+way:6,  tag:320
+way:7,  tag:384
+way:8,  tag:448
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 9
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:128
+way:4,  tag:192
+way:5,  tag:256
+way:6,  tag:320
+after tag_hit =1
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:128
+way:4,  tag:192
+way:5,  tag:256
+way:6,  tag:320
+way:7,  tag:384
+way:8,  tag:448
+way:9,  tag:768
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 10
+way:0,  tag:None
+way:1,  tag:320
+way:2,  tag:None
+way:3,  tag:None
+way:4,  tag:None
+way:5,  tag:None
+way:6,  tag:None
+way:7,  tag:None
+way:8,  tag:None
+way:9,  tag:None
+way:10,  tag:None
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 3 way to replace: 2
+way:0,  tag:None
+way:1,  tag:0
+way:2,  tag:64
+way:3,  tag:128
+way:4,  tag:192
+way:5,  tag:256
+way:6,  tag:320
+way:7,  tag:384
+way:8,  tag:448
+way:9,  tag:768
+way:10,  tag:1024
+way:11,  tag:None
+way:12,  tag:None
+way:13,  tag:None
+way:14,  tag:None
+way:15,  tag:None
+state:I
+Mem address index: 2 way to replace: 11
+
+**************** Output Key Statistics ******************
+╒═══════════════╤════════════════╤═══════════════════╤════════════════════╤═══════════════════╕
+│   Cache Reads │   Cache Writes │   Cache Hit Count │   Cache Miss Count │   Cache Hit Ratio │
+╞═══════════════╪════════════════╪═══════════════════╪════════════════════╪═══════════════════╡
+│            17 │              0 │                 3 │                 14 │             0.176 │
+╘═══════════════╧════════════════╧═══════════════════╧════════════════════╧═══════════════════╛

@@ -1,0 +1,157 @@
+command 0
+tag_hit =0, address = 0x2123450
+update lru func: 0
+BusOperation: READ, Address: 0x2123450, SnoopResult: HIT
+L2: SENDLINE   0x2123450
+command 0
+tag_hit =0, address = 0x4123450
+update lru func: 1
+BusOperation: READ, Address: 0x4123450, SnoopResult: HIT
+L2: SENDLINE   0x4123450
+command 0
+tag_hit =0, address = 0x6123450
+update lru func: 2
+BusOperation: READ, Address: 0x6123450, SnoopResult: HIT
+L2: SENDLINE   0x6123450
+command 0
+tag_hit =0, address = 0x8123450
+update lru func: 3
+BusOperation: READ, Address: 0x8123450, SnoopResult: HIT
+L2: SENDLINE   0x8123450
+command 0
+tag_hit =0, address = 0xa123450
+update lru func: 4
+BusOperation: READ, Address: 0xa123450, SnoopResult: HIT
+L2: SENDLINE   0xa123450
+command 0
+tag_hit =0, address = 0xc123450
+update lru func: 5
+BusOperation: READ, Address: 0xc123450, SnoopResult: HIT
+L2: SENDLINE   0xc123450
+command 0
+tag_hit =0, address = 0xe123450
+update lru func: 6
+BusOperation: READ, Address: 0xe123450, SnoopResult: HIT
+L2: SENDLINE   0xe123450
+command 0
+tag_hit =0, address = 0x123450
+update lru func: 7
+BusOperation: READ, Address: 0x123450, SnoopResult: HIT
+L2: SENDLINE   0x123450
+command 0
+update lru func: 0
+tag_hit =1, address = 0x2123450
+command 0
+update lru func: 1
+tag_hit =1, address = 0x4123450
+command 0
+update lru func: 2
+tag_hit =1, address = 0x6123450
+command 0
+update lru func: 3
+tag_hit =1, address = 0x8123450
+command 0
+update lru func: 4
+tag_hit =1, address = 0xa123450
+command 0
+update lru func: 5
+tag_hit =1, address = 0xc123450
+command 0
+update lru func: 6
+tag_hit =1, address = 0xe123450
+command 0
+update lru func: 7
+tag_hit =1, address = 0x123450
+command 0
+update lru func: 0
+tag_hit =1, address = 0x2123450
+command 0
+update lru func: 1
+tag_hit =1, address = 0x4123450
+command 0
+update lru func: 2
+tag_hit =1, address = 0x6123450
+command 0
+update lru func: 3
+tag_hit =1, address = 0x8123450
+command 0
+update lru func: 4
+tag_hit =1, address = 0xa123450
+command 0
+update lru func: 5
+tag_hit =1, address = 0xc123450
+command 0
+update lru func: 6
+tag_hit =1, address = 0xe123450
+command 0
+update lru func: 7
+tag_hit =1, address = 0x123450
+command 0
+tag_hit =0, address = 0x1123450
+L2: EVICTLINE   0x2123440
+BusOperation: READ, Address: 0x1123450, SnoopResult: HIT
+L2: SENDLINE   0x1123450
+command 0
+tag_hit =0, address = 0x3123450
+L2: EVICTLINE   0xa123440
+BusOperation: READ, Address: 0x3123450, SnoopResult: HIT
+L2: SENDLINE   0x3123450
+command 0
+tag_hit =0, address = 0x5123450
+L2: EVICTLINE   0x6123440
+BusOperation: READ, Address: 0x5123450, SnoopResult: HIT
+L2: SENDLINE   0x5123450
+command 0
+tag_hit =0, address = 0x7123450
+L2: EVICTLINE   0xe123440
+BusOperation: READ, Address: 0x7123450, SnoopResult: HIT
+L2: SENDLINE   0x7123450
+command 0
+tag_hit =0, address = 0x9123450
+L2: EVICTLINE   0x4123440
+BusOperation: READ, Address: 0x9123450, SnoopResult: HIT
+L2: SENDLINE   0x9123450
+command 0
+tag_hit =0, address = 0xb123450
+L2: EVICTLINE   0xc123440
+BusOperation: READ, Address: 0xb123450, SnoopResult: HIT
+L2: SENDLINE   0xb123450
+command 0
+tag_hit =0, address = 0xd123450
+L2: EVICTLINE   0x8123440
+BusOperation: READ, Address: 0xd123450, SnoopResult: HIT
+L2: SENDLINE   0xd123450
+command 0
+tag_hit =0, address = 0xf123450
+L2: EVICTLINE   0x123440
+BusOperation: READ, Address: 0xf123450, SnoopResult: HIT
+L2: SENDLINE   0xf123450
+command 9
+************** Contents of Valid Lines in L2 Cache ***************
+
+╒═════════╤═══════╤═══════╤═══════╕
+│ State   │   Tag │   Set │   Way │
+╞═════════╪═══════╪═══════╪═══════╡
+│ S       │     8 │ 18641 │     0 │
+├─────────┼───────┼───────┼───────┤
+│ S       │    72 │ 18641 │     1 │
+├─────────┼───────┼───────┼───────┤
+│ S       │    40 │ 18641 │     2 │
+├─────────┼───────┼───────┼───────┤
+│ S       │   104 │ 18641 │     3 │
+├─────────┼───────┼───────┼───────┤
+│ S       │    24 │ 18641 │     4 │
+├─────────┼───────┼───────┼───────┤
+│ S       │    88 │ 18641 │     5 │
+├─────────┼───────┼───────┼───────┤
+│ S       │    56 │ 18641 │     6 │
+├─────────┼───────┼───────┼───────┤
+│ S       │   120 │ 18641 │     7 │
+╘═════════╧═══════╧═══════╧═══════╛
+
+**************** Output Key Statistics ******************
+╒═══════════════╤════════════════╤═══════════════════╤════════════════════╤═══════════════════╕
+│   Cache Reads │   Cache Writes │   Cache Hit Count │   Cache Miss Count │   Cache Hit Ratio │
+╞═══════════════╪════════════════╪═══════════════════╪════════════════════╪═══════════════════╡
+│            32 │              0 │                16 │                 16 │               0.5 │
+╘═══════════════╧════════════════╧═══════════════════╧════════════════════╧═══════════════════╛

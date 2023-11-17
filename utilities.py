@@ -25,17 +25,14 @@ class Global:
     INDEX_BITS = None
     TAG_BITS = None
     REPLACEMENT_POLICY = None
+    DC_GROUP1_LOWER = None
+    DC_GROUP1_UPPER = None
+    DC_GROUP2_UPPER = None
 
 
 PSEUDO_LRU = WAYS - 1
 command_size = 4
 address_size = 32
-
-
-# for DC replacement policy
-DC_GROUP1_LOWER = 0
-DC_GROUP1_UPPER = 2 * Global.WAYS
-DC_GROUP2_UPPER = 4 * Global.WAYS
 
 
 # Bus operation Types
@@ -151,6 +148,10 @@ def parseArguments():
     finally:
         Global.INDEX_BITS = math.ceil(math.log2(Global.SETS))
         Global.TAG_BITS = ADDRESS_BITS - Global.INDEX_BITS - Global.BYTE_SELECT
+        # for DC replacement policy
+        Global.DC_GROUP1_LOWER = 0
+        Global.DC_GROUP1_UPPER = 2 * Global.WAYS
+        Global.DC_GROUP2_UPPER = 4 * Global.WAYS
     global filename
     filename = args.file_name
 

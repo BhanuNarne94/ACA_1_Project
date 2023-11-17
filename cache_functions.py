@@ -50,9 +50,10 @@ class Cache:
                 set_index.append(tag_array)
             elif Global.REPLACEMENT_POLICY == "truelru":
                 for line in range(ways):
-                    each_line = {"state": 'I', "tag": None, "counter": 0}
+                    each_line = {"state": 'I', "tag": None}
                     lines.append(each_line)
                 tag_array = {
+                    "counter": [],
                     "lines": lines
                 }
                 set_index.append(tag_array)
