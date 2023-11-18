@@ -23,7 +23,7 @@ class Cache:
         self.test = test
         self.policy_select = 0
         self.dualing_clock = DuelingClock(sets, ways)
-        self.counter_lru = CounterLru(sets, ways)
+        self.counter_lru = CounterLru(ways)
         # Initialisation code starts here
         set_index = []
         for index in range(sets):

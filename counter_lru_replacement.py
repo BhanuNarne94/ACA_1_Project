@@ -1,29 +1,22 @@
-
-
 class CounterLru:
-    def __init__(self, sets, ways):
-        self.sets = sets
+    def __init__(self, ways):
         self.ways = ways
+        # self.access_order = [i for i in range(ways)]
 
     def updateLRU(self, set_num, way, cache_table):
-        counter_list = cache_table[set_num]["counter"]
-        if len(counter_list) == 0:
-            counter_list.append(way)
-            return
-        elif way not in counter_list:
-            counter_list.append(-1)
-            for i in range(len(counter_list)-1, 0, -1):
-                counter_list[i] = counter_list[i-1]
-        elif way in counter_list:
-            tag_index = counter_list.index(way)
-            for i in range(tag_index, 0, -1):
-                counter_list[i] = counter_list[i-1]
-        counter_list[0] = way
+        if way in cache_table[set_num]["counter"]:
+            cache_table[set_num]["counter"].remove(way)
+        cache_table[set_num]["counter"].append(way)
 
     def evictLine(self, set_num, cache_table):
-        new_way = cache_table[set_num]["counter"][-1]
-        self.updateLRU(set_num, new_way, cache_table)
-        return new_way
+        if len(cache_table[set_num]["counter"]) > 0:
+            ev = cache_table[set_num]["counter"].pop(0)
+            cache_table[set_num]["counter"].append(ev)
+            return ev
+        return 0  # In case of an issue, return the first line as the least recently used
 
-
-
+# Example usage:
+# Create an LRU object with the number of ways (e.g., 8 for an 8-way set-associative cache)
+# lru = LRU(8)
+# To update LRU for a cache line, call lru.updateLRU(line)
+# To evict a cache line based on LRU, call lru.evictLine()
