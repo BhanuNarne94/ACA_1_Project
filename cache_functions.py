@@ -99,8 +99,7 @@ class Cache:
                 elif Global.REPLACEMENT_POLICY == "dcrp":
                     self.cache_table[mem_address_index]["lines"][way]["hit_bit"] = 1
                 elif Global.REPLACEMENT_POLICY == "truelru":
-                    #self.counter_lru.updateLRU(mem_address_index, way, self.cache_table)
-                    line["counter"] = self.cache_table[mem_address_index]["tLRU"].updateLRU(idx)
+                    self.counter_lru.updateLRU(mem_address_index, way, self.cache_table)
                 break
         return tag_hit, way
 
@@ -124,8 +123,7 @@ class Cache:
                         line["lru"] = self.cache_table[mem_address_index]["pLRU"].updateLRU(idx)
                         self.cache_table[mem_address_index]["lru_bits"] = line["lru"]
                     elif Global.REPLACEMENT_POLICY == "truelru":
-                        #self.counter_lru.updateLRU(mem_address_index, way, self.cache_table)
-                        line["counter"] = self.cache_table[mem_address_index]["tLRU"].updateLRU(idx)
+                        self.counter_lru.updateLRU(mem_address_index, way, self.cache_table)
                         self.cache_table[mem_address_index]["lines"][way]["state"] = 'V'
                     break
             if not any_empty_line == 1:
@@ -134,9 +132,7 @@ class Cache:
                     self.cache_table[mem_address_index]["lines"][way]["lru"] = lru
                     self.cache_table[mem_address_index]["lru_bits"] = lru
                 elif Global.REPLACEMENT_POLICY == "truelru":
-                    #way = self.counter_lru.evictLine()
-                    way = self.cache_table[mem_address_index]["tLRU"].evictLine()
-                    # Todo: check if the above line is okay
+                    way = self.counter_lru.evictLine(mem_address_index, self.cache_table)
                 tag_at_way = self.cache_table[mem_address_index]["lines"][way]["tag"]
                 way_address = (tag_at_way << (Global.INDEX_BITS + Global.BYTE_SELECT)) + \
                               (mem_address_index << Global.BYTE_SELECT)
