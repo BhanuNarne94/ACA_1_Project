@@ -1,25 +1,17 @@
 class CounterLru:
     def __init__(self, ways):
         self.ways = ways
-        self.access_order = [i for i in range(ways)]
+        # self.access_order = [i for i in range(ways)]
 
-    def updateLRU(self, line):
-        """
-        Update the LRU for the accessed cache line.
-        :param line: The line that was accessed (0 to ways-1).
-        """
-        if line in self.access_order:
-            self.access_order.remove(line)
-        self.access_order.append(line)
+    def updateLRU(self, set_num, way, cache_table):
+        if way in cache_table[set_num]["counter"]:
+            cache_table[set_num]["counter"].remove(way)
+        cache_table[set_num]["counter"].append(way)
 
-    def evictLine(self):
-        """
-        Find and return the cache line to evict based on the LRU policy.
-        :return: The index of the cache line to evict (0 to ways-1).
-        """
-        if len(self.access_order) > 0:
-            ev=self.access_order.pop(0)
-            self.access_order.append(ev)
+    def evictLine(self, set_num, cache_table):
+        if len(cache_table[set_num]["counter"]) > 0:
+            ev = cache_table[set_num]["counter"].pop(0)
+            cache_table[set_num]["counter"].append(ev)
             return ev
         return 0  # In case of an issue, return the first line as the least recently used
 

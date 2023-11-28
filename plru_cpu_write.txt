@@ -1,0 +1,41 @@
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+************** Contents of Valid Lines in L2 Cache ***************
+
+**************** Output Key Statistics ******************
+╒═══════════════╤════════════════╤═══════════════════╤════════════════════╤═══════════════════╤════════════════════╕
+│   Cache Reads │   Cache Writes │   Cache Hit Count │   Cache Miss Count │   Cache Hit Ratio │   Cache Miss Ratio │
+╞═══════════════╪════════════════╪═══════════════════╪════════════════════╪═══════════════════╪════════════════════╡
+│             8 │              9 │                 7 │                 10 │              41.2 │               58.8 │
+╘═══════════════╧════════════════╧═══════════════════╧════════════════════╧═══════════════════╧════════════════════╛

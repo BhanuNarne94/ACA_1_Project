@@ -23,7 +23,7 @@ class Cache:
         self.test = test
         self.policy_select = 0
         self.dualing_clock = DuelingClock(sets, ways)
-        self.counter_lru = CounterLru( ways)
+        self.counter_lru = CounterLru(ways)
         # Initialisation code starts here
         set_index = []
         for index in range(sets):
@@ -50,12 +50,12 @@ class Cache:
                 set_index.append(tag_array)
             elif Global.REPLACEMENT_POLICY == "truelru":
                 for line in range(ways):
-                    each_line = {"state": 'I', "tag": None, "counter": 0}
+                    each_line = {"state": 'I', "tag": None}
                     lines.append(each_line)
                 index_Tlru = CounterLru(ways)
                 tag_array = {
-                    "lines": lines,
-                    "tLRU": index_Tlru
+                    "counter": [],
+                    "lines": lines
                 }
                 set_index.append(tag_array)
         self.cache_table = set_index
